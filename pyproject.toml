@@ -17,7 +17,7 @@ dependencies = [
     "pyyaml",
     "tensorboardX",
     "wandb>=0.17.4",
-    "isaaclab[isaacsim,all]==2.3.0",
+    "isaacsim[all,extscache]==5.1.0",
 ]
 
 [tool.uv]
@@ -41,4 +41,7 @@ torchvision = [
 ]
 torchaudio = [
   { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+isaacsim = [
+  { index = "nvidia", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
 ]
