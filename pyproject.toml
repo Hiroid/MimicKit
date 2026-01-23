@@ -18,6 +18,7 @@ dependencies = [
     "tensorboardX",
     "wandb>=0.17.4",
     "isaacsim[all,extscache]==5.1.0",
+    "pip>=25.3",
 ]
 
 [tool.uv]
