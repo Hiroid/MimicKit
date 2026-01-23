@@ -1,0 +1,51 @@
+[project]
+name = "mimickit"
+version = "0.1.0"
+description = "UV refactor of mimickit"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "nvitop>=1.5.3",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "transformers",
+    "tqdm>=4.67.1",
+    "gymnasium",
+    "matplotlib",
+    "numpy",
+    "pyyaml",
+    "tensorboardX",
+    "wandb>=0.17.4",
+    "isaaclab[isaacsim,all]==2.3.0",
+    "pip>=25.3",
+]
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[[tool.uv.index]]
+name = "nvidia"
+url = "https://pypi.nvidia.com"
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchaudio = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+isaaclab = [
+  { index = "nvidia", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+isaacsim = [
+  { index = "nvidia", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
