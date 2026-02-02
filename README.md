@@ -99,7 +99,7 @@ python mimickit/run.py --arg_file args/deepmimic_humanoid_ppo_args.txt --devices
 
 ## Methods
 
-More detailed instrctions for each method are available here:
+More detailed instructions for each method are available here:
 - [DeepMimic](docs/README_DeepMimic.md)
 - [AMP](docs/README_AMP.md)
 - [ASE](docs/README_ASE.md)

@@ -28,7 +28,7 @@ def build_env(env_file, engine_file, num_envs, device, visualize):
         env = add_env.ADDEnv(env_config=env_config, engine_config=engine_config, num_envs=num_envs, device=device, visualize=visualize)
     elif (env_name == "char_dof_test"):
         import envs.char_dof_test_env as char_dof_test_env
-        env = char_dof_test_env.CharDofTestEnv(env_config=env_config, num_envs=num_envs, device=device, visualize=visualize)
+        env = char_dof_test_env.CharDofTestEnv(env_config=env_config, engine_config=engine_config, num_envs=num_envs, device=device, visualize=visualize)
     elif (env_name == "view_motion"):
         import envs.view_motion_env as view_motion_env
         env = view_motion_env.ViewMotionEnv(env_config=env_config, engine_config=engine_config, num_envs=num_envs, device=device, visualize=visualize)
