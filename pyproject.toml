@@ -1,7 +1,7 @@
 [project]
-name = "mimickit"
+name = "cats_agent_communication"
 version = "0.1.0"
-description = "UV refactor of mimickit"
+description = "Agent Communication for Maze and embodied skills"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

@@ -1,5 +1,5 @@
 def main():
-    print("Hello from mimickit!")
+    print("Hello from cats agent communication!")
 
 
 if __name__ == "__main__":
