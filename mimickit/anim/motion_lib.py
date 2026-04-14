@@ -195,7 +195,7 @@ class MotionLib():
             motion_files = []
             motion_weights = []
 
-            with open(motion_file, "r") as f:
+            with open(motion_file, "r", encoding="utf-8-sig") as f:
                 motion_config = yaml.load(f, Loader=yaml.SafeLoader)
 
             motion_list = motion_config["motions"]

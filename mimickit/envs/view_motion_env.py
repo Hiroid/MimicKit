@@ -6,10 +6,14 @@ import engines.engine as engine
 
 import numpy as np
 import torch
+from util.logger import Logger
 
 class ViewMotionEnv(char_env.CharEnv):
     def __init__(self, env_config, engine_config, num_envs, device, visualize):
         self._time_scale = 1.0
+        self._render_key_points_enabled = env_config.get("render_key_points", True)
+        self._enable_motion_switch = env_config.get("enable_motion_switch", False)
+        self._preview_motion_id = env_config.get("preview_motion_id", 0)
         engine_config["sim_freq"] = engine_config["control_freq"]
 
         super().__init__(env_config=env_config, engine_config=engine_config,
@@ -21,6 +25,9 @@ class ViewMotionEnv(char_env.CharEnv):
 
         motion_file = env_config["motion_file"]
         self._load_motions(motion_file)
+        num_motions = self._motion_lib.get_num_motions()
+        if (num_motions > 0):
+            self._preview_motion_id %= num_motions
         return
     
     def _build_character(self, env_id, env_config, color=None):
@@ -82,6 +89,34 @@ class ViewMotionEnv(char_env.CharEnv):
         self._render_key_points()
         return
     
+    def _setup_gui(self):
+        super()._setup_gui()
+
+        def toggle_key_points():
+            self._render_key_points_enabled = not self._render_key_points_enabled
+            state = "on" if self._render_key_points_enabled else "off"
+            Logger.print("View motion key points: {}".format(state))
+            return
+        self._engine.register_keyboard_callback("K", toggle_key_points)
+
+        num_motions = self._motion_lib.get_num_motions()
+        if (self._enable_motion_switch and num_motions > 1):
+            def prev_motion():
+                self._change_motion(-1)
+                return
+            self._engine.register_keyboard_callback("LEFT", prev_motion)
+
+            def next_motion():
+                self._change_motion(1)
+                return
+            self._engine.register_keyboard_callback("RIGHT", next_motion)
+
+        Logger.print("View motion controls: Enter play/pause, Space step, K toggle key points")
+        if (self._enable_motion_switch and num_motions > 1):
+            Logger.print("View motion controls: Left/Right switch clips")
+            self._log_current_motion()
+        return
+    
     def _build_sim_tensors(self, config):
         super()._build_sim_tensors(config)
         
@@ -93,7 +128,10 @@ class ViewMotionEnv(char_env.CharEnv):
 
     def _get_env_motion_ids(self):
         num_motions = self._motion_lib.get_num_motions()
-        motion_ids = torch.remainder(self._env_ids, num_motions)
+        if (self._enable_motion_switch):
+            motion_ids = torch.full_like(self._env_ids, self._preview_motion_id)
+        else:
+            motion_ids = torch.remainder(self._env_ids, num_motions)
         return motion_ids
 
     def _update_done(self):
@@ -105,7 +143,7 @@ class ViewMotionEnv(char_env.CharEnv):
         return
 
     def _render_key_points(self):
-        if (self._has_key_bodies()):
+        if (self._render_key_points_enabled and self._has_key_bodies()):
             line_width = 2.0
             num_key_bodies = self._key_body_ids.shape[0]
             cols = np.array(3 * num_key_bodies * [[1.0, 0.0, 0.0, 1.0]], dtype=np.float32)
@@ -136,6 +174,31 @@ class ViewMotionEnv(char_env.CharEnv):
                 
                 self._engine.draw_lines(i, start_verts, end_verts, cols, line_width)
 
+        return
+
+    def _change_motion(self, delta):
+        num_motions = self._motion_lib.get_num_motions()
+        motion_id = (self._preview_motion_id + delta) % num_motions
+        self._set_motion(motion_id)
+        return
+    
+    def _set_motion(self, motion_id):
+        motion_id = int(motion_id)
+        if (motion_id == self._preview_motion_id):
+            return
+
+        self._preview_motion_id = motion_id
+        self._reset_envs(self._env_ids)
+        self._sync_motion()
+        self._update_observations()
+        self._update_info()
+        self._log_current_motion()
+        return
+    
+    def _log_current_motion(self):
+        num_motions = self._motion_lib.get_num_motions()
+        motion_file = self._motion_lib.get_motion_file(self._preview_motion_id)
+        Logger.print("Viewing motion {:d}/{:d}: {}".format(self._preview_motion_id + 1, num_motions, motion_file))
         return
     
     def _get_char_color(self):

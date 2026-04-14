@@ -1,0 +1,297 @@
+motions:
+  - file: "data/motions/humanoid/humanoid_backflip.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_cartwheel.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_dance_a.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_dance_b.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_dance_spin.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_getup_facedown.pkl"
+    weight: 5.0
+  - file: "data/motions/humanoid/humanoid_getup_faceup.pkl"
+    weight: 5.0
+  - file: "data/motions/humanoid/humanoid_jog.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_jump.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_kick.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_kick_combo.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_punch.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_run.pkl"
+    weight: 3.0
+  - file: "data/motions/humanoid/humanoid_sideflip.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_spin.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_spinkick.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/humanoid_walk.pkl"
+    weight: 3.0
+  - file: "data/motions/humanoid/humanoid_zombie_walk.pkl"
+    weight: 2.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk0.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk0_mirror.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk1.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk1_mirror.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk2.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk2_mirror.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk3.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_walk3_mirror.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_long_zombie.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_stealthy_walk0.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/long/humanoid_stealthy_walk1.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run_loop00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run01.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run02.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run03.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run04.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run05.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run06.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run07.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run08.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run09.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run10.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run11.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run12.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run13.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run14.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run15.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run16.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run17.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run18.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run19.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run20.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run21.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run22.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run23.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run24.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run25.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run26.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run27.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run28.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run29.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run30.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run31.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run32.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run33.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run34.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run35.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run36.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run37.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run38.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run39.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run40.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run41.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run42.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run43.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run44.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run45.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run46.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run47.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run48.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run49.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run50.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run51.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run52.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run53.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run54.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run55.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run56.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run57.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run58.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run59.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run60.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_run61.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_strides00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_strides01.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_strides02.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_strides03.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_strides04.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/parc/humanoid_strides05.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_punch_forward00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_punch_forward01.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_punch_forward02.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_punch_left00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward01.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward02.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward03.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward04.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward05.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward06.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward07.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward08.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward09.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward10.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward11.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward12.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward13.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward14.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_forward15.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left01.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left02.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left03.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left04.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left05.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left06.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left07.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left08.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left09.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left10.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left11.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left12.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left13.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_left14.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right00.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right01.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right02.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right03.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right04.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right05.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right06.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right07.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right08.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right09.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right10.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right11.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right12.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right13.pkl"
+    weight: 1.0
+  - file: "data/motions/humanoid/sie/humanoid_sie_run_right14.pkl"
+    weight: 1.0
